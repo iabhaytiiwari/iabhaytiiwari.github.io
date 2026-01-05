@@ -9,31 +9,90 @@
     <meta name="description" content="Senior Software Engineer with 8+ years of experience in Linux, Python, DevOps, kernel I/O, storage and distributed systems. Open to relocation: Duabi, Germay, Sweden, Japan.">
 
     <style>
-      body {
-        font-family:  -apple-system,  BlinkMacSystemFont,  Arial,  sans-serif;
-        max-width:  1000px;
+      :root  {
+        --bg:  #ffffff;
+        --card:  #f9fafb;
+        --text:  #1f2933;
+        --muted:  #6b7280;
+        --accent:  #2563eb;
+      }
+
+      body  {
+        font-family:  Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        max-depth:  1100px;
         margin:  auto;
-        padding:  24px;
-        color:  #222;
-        background:  #ffffff;
-        line-height:  1.6;
+        padding:  40px 24px;
+        background:  var(--bg);
+        color:  var(--text);
+        line-height:  1.75;
       }
-      h1,  h2,  h3  {
-        color:  #111;
+
+      h1  {
+        font-size:  2.5rem;
+        margin-bottom:  0.3rem;
       }
+
+      h2  {
+        font-size:  1.35rem;
+        margin-bottom:  14px;
+        padding-left:  12px;
+        border-left:  4px solid var(--accent);
+      }
+
+      h3  {
+        font-size:  1.05rem;
+        margin-bottom:  6px;
+      }
+
       .section  {
-        margin-bottom:  32px;
+        background:  var(--card);
+        padding:  26px;
+        border-radius:  14px;
+        margin-bottom:  30px;
+        box-shadow: 12px 30px rgba(0,0,0,0,04);
+        animation:  fadeUp 0.5s ease both;
       }
-      u1  {
+
+      .highlight  {
+        font-weight:  600;
+        color:  var(--accent);
+      }
+
+      ul  {
         padding-left:  20px;
       }
-      .highlight  {
-        font-weight:  bold;
+
+      ul li  {
+        margin-bottom:  10px;
       }
+
       a  {
-        color:  #005bbb;
-        text-decoration:  none;
+        color:  var(--accent);
+        text-decoration: none;
+        font-weight:  500;
       }
+
+      a:hover  {
+        text-decoration: underline;
+      }
+
+      hr  {
+        border: none;
+        height: 1px;
+        background: #e5e7eb;
+        margin: 36px 0;
+      }
+
+      @keyframes fadeUp  {
+        from  {
+          opacity: 0;
+          transform:  translateY(10px);
+        }
+        to  {
+          opacity: 0;
+          transform:  translateY(10px);
+        }
+      }   
     </style>
   </head>
 
@@ -41,7 +100,7 @@
     <!-- HERO / LANDING -->
     <section class="section">
     <h1>Abhay Tiwari</h1>
-    <p  class="highlight">
+    <p  class="highlight" style="font-size:1.05rem;">
       Senior Software Engineer | Linux  ●  Python  ●  DevOps  ●  Distributed Systems ●  Disaster Recovery
     </p>
 
