@@ -24,27 +24,17 @@
         --muted: #9ca3af;
         --accent: #60a5fa;      /* softer blue */
       }
-
+      
       body::before {
         content: "";
         position: fixed;
-        inset: -40%;
+        inset: 0;
         z-index: -1;
-      
         background-color: var(--bg);
-      
-        /* chip-like dots */
-        background-image:
-          repeating-radial-gradient(
-            circle,
-            rgba(255,255,255,0.08) 0 1.2px,
-            transparent 1.2px 18px
-          );
-      
-        background-size: 36px 36px;
-      
-        transform: rotate(45deg);
-        opacity: 0.3;
+        background-image: url('assets/wave.svg'); /* pre-designed sinewave */
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.15;
       }
 
 
