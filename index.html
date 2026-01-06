@@ -30,13 +30,12 @@
         position: fixed;
         inset: 0;
         z-index: -1;
-        background-color: var(--bg);
-        background-image: url('assets/wave.svg'); /* pre-designed sinewave */
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0.15;
+        background:
+          radial-gradient(circle at 61.8% 38.2%, rgba(255,215,128,0.08) 1px, transparent 2px),
+          radial-gradient(circle at 38.2% 61.8%, rgba(255,215,128,0.05) 1px, transparent 2px);
+        background-size: 55px 89px; /* Fibonacci numbers */
+        opacity: 0.4;
       }
-
 
       body {
         font-family: Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
